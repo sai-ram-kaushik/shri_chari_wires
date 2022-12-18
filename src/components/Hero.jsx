@@ -14,47 +14,50 @@ export const Hero = () => {
 
   return (
     <>
-      <section
-        className="min-h-screen flex py-10 md:flex-row flex-col items-center"
-        data-aos="fade-right"
-      >
-        <div className="flex-1 flex md:text-left text-center md:ml-10 md:mt-5 mt-10 flex-col m-5">
-          <h1 className="md:text-7xl text-3xl font-bold text-[#d7e3ef]">
-            WELCOME TO
-            <p>SHRI CHARI WIRE</p>
-          </h1>
-          <p className="text-lg text-[#d7e3ef] mt-4">
-            Shri Chari Wires, our flag ship group company, has been established
-            in 1995. It is located at 23/7, Mathura Road, Sector-58,
-            Faridabad-121004. It is 60 Km from Indira Gandhi International
-            airport & 50 Kms form New Delhi Railway Station.
-          </p>
-          <p className="text-lg text-[#d7e3ef] mt-4">
-            Shri Chari Wires now having Annealing capacity of 15000 MT per year,
-            Drawing Capacity of 20000 MT per year and Size Range 1.80 to 36.00
-            MM, produces world class steel wires in various grades like low
-            carbon, medium carbon, C-Mn Steel, Boron Steels and Alloy Steel
-            Wires. These steel wires are manufactured to suit varied needs of
-            engineering, automobile & allied industries.
-          </p>
-        </div>
-        <div className="flex-1">
-          <div className="flex h-full">
-            <img
-              src={banner}
-              className="md:w-[600px] w-[300px] md:ml-20 rounded-3xl border-4 border-[#d7e3ef]"
-              alt="banner"
-            />
+      <div className="flex py-10 justify-center">
+        <section
+          className="min-h-screen md:w-[95vw] w-[90vw] flex md:flex-row flex-col bg-[#0b131f] rounded-2xl"
+          data-aos="fade-right"
+        >
+          <div className="flex-1 flex md:text-left text-center md:ml-10 md:mt-20 py-28 flex-col m-5">
+            <h1 className="md:text-7xl text-3xl font-bold text-[#d7e3ef]">
+              WELCOME TO
+              <p>SHRI CHARI WIRE</p>
+            </h1>
+            <p className="text-lg text-[#d7e3ef] mt-4 flex flex-wrap">
+              Shri Chari Wires, our flag ship group company, has been
+              established in 1995. It is located at 23/7, Mathura Road,
+              Sector-58, Faridabad-121004. It is 60 Km from Indira Gandhi
+              International airport & 50 Kms form New Delhi Railway Station.
+            </p>
+            <p className="text-lg text-[#d7e3ef] mt-4 flex flex-wrap">
+              Shri Chari Wires now having Annealing capacity of 15000 MT per
+              year, Drawing Capacity of 20000 MT per year and Size Range 1.80 to
+              36.00 MM, produces world class steel wires in various grades like
+              low carbon, medium carbon, C-Mn Steel, Boron Steels and Alloy
+              Steel Wires. These steel wires are manufactured to suit varied
+              needs of engineering, automobile & allied industries.
+            </p>
           </div>
-        </div>
-      </section>
+          
+          <div className="flex-1">
+            <div className="flex h-full">
+              <img
+                src={banner}
+                className="md:w-[500px] h-[300px] w-[300px] mt-56 md:ml-32 rounded-3xl border-4 border-[#d7e3ef]"
+                alt="banner"
+              />
+            </div>
+          </div>
+        </section>
+      </div>
 
       <div className="bg-[#d7e3ef] w-full md:h-[70vh]">
         <div
           className="flex flex-col m-5 items-center justify-center"
           data-aos="fade-right"
         >
-          <h2 className="md:text-5xl text-3xl md:text-center text-center font-bold m-5 ">
+          <h2 className="md:text-5xl text-3xl md:text-center text-center font-bold m-5 text-[#0b131f]">
             Our Products
           </h2>
           <div className="flex md:flex-row flex-col md:gap-20 gap-10 mt-8">
@@ -85,7 +88,10 @@ export const Hero = () => {
           </div>
         </div>
 
-        <div className="w-[90vw] md:block hidden mt-16 ml-20 rounded-xl border-2 border-[#0b131f]" data-aos="fade-right">
+        <div
+          className="w-[90vw] md:block hidden mt-16 ml-20 rounded-lg border-2 border-[#0b131f]"
+          data-aos="fade-right"
+        >
           <Responsive />
         </div>
       </div>
