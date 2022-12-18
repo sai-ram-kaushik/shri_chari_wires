@@ -1,16 +1,27 @@
-import React from "react";
+import React, { useEffect } from "react";
 import banner from "../assets/images/hero.jpg";
 import product1 from "../assets/images/alloySteelWire.webp";
 import product2 from "../assets/images/nonAlloy.jpg";
 import { Link } from "react-router-dom";
+import Aos from "aos";
+import "aos/dist/aos.css";
+import Responsive from "./Responsive";
+
 export const Hero = () => {
+  useEffect(() => {
+    Aos.init({ duration: 1000 });
+  }, []);
+
   return (
     <>
-      <section className="min-h-screen flex py-10 md:flex-row flex-col items-center">
+      <section
+        className="min-h-screen flex py-10 md:flex-row flex-col items-center"
+        data-aos="fade-right"
+      >
         <div className="flex-1 flex md:text-left text-center md:ml-10 md:mt-5 mt-10 flex-col m-5">
           <h1 className="md:text-7xl text-3xl font-bold text-[#d7e3ef]">
-            Welcome to
-            <p>Shri Chari Wires</p>
+            WELCOME TO
+            <p>SHRI CHARI WIRE</p>
           </h1>
           <p className="text-lg text-[#d7e3ef] mt-4">
             Shri Chari Wires, our flag ship group company, has been established
@@ -32,31 +43,50 @@ export const Hero = () => {
             <img
               src={banner}
               className="md:w-[600px] w-[300px] md:ml-20 rounded-3xl border-4 border-[#d7e3ef]"
+              alt="banner"
             />
           </div>
         </div>
       </section>
 
-      <div className="bg-[#d7e3ef] w-full md:h-[50vh] ">
-        <div className="flex flex-col m-5 items-center justify-center">
-          <h2 className="md:text-5xl text-3xl md:text-center text-center font-bold m-5 ">Our Products</h2>
+      <div className="bg-[#d7e3ef] w-full md:h-[70vh]">
+        <div
+          className="flex flex-col m-5 items-center justify-center"
+          data-aos="fade-right"
+        >
+          <h2 className="md:text-5xl text-3xl md:text-center text-center font-bold m-5 ">
+            Our Products
+          </h2>
           <div className="flex md:flex-row flex-col md:gap-20 gap-10 mt-8">
             <div className="flex flex-col gap-4 text-center">
               <img
                 src={product1}
                 className="md:w-[200px] w-[150px] rounded-full border-4 border-[#0b131f]"
+                alt="product-1"
               />
-              <Link to="/alloy_steel_wire" className="text-lg font-semibold">Allow Steel Wires</Link>
+              <Link to="/alloy_steel_wire" className="text-lg font-semibold">
+                Allow Steel Wires
+              </Link>
             </div>
 
             <div className="flex flex-col gap-4 text-center">
               <img
                 src={product2}
                 className="md:w-[200px] w-[150px] rounded-full border-4 border-[#0b131f]"
+                alt="product-2"
               />
-              <Link to="/non_alloy_steel_wire" className="text-lg font-semibold">Non-Allow Steel Wires</Link>
+              <Link
+                to="/non_alloy_steel_wire"
+                className="text-lg font-semibold"
+              >
+                Non-Allow Steel Wires
+              </Link>
             </div>
           </div>
+        </div>
+
+        <div className="w-[90vw] md:block hidden mt-16 ml-20 rounded-xl border-2 border-[#0b131f]" data-aos="fade-right">
+          <Responsive />
         </div>
       </div>
     </>

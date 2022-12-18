@@ -8,6 +8,9 @@ import { Products } from "./components/Products";
 import { Plant } from "./components/Plant";
 import { Query } from "./components/Query";
 import { Contact } from "./components/Contact";
+import { AlloySteelWires } from "./components/AlloySteelWires";
+import { NonAlloy } from "./components/NonAlloy";
+import { Footer } from "./components/Footer";
 function App() {
   return (
     <BrowserRouter>
@@ -20,7 +23,10 @@ function App() {
         <Route path="/plant_&_machinery" element={<Plant />} />
         <Route path="/query" element={<Query />} />
         <Route path="/contact_us" element={<Contact />} />
+        <Route path="/alloy_steel_wire" element={<AlloySteelWires />} />
+        <Route path="/non_alloy_steel_wire" element={<NonAlloy />} />
       </Routes>
+      <Footer />
     </BrowserRouter>
   );
 }
