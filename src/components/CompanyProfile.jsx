@@ -77,13 +77,74 @@ export const CompanyProfile = () => {
       </div>
 
       <div className="flex justify-center py-5">
-        <div className="md:w-[95vw] w-[90vw] md:h-[55vh] flex md:flex-col flex-col bg-[#0b131f] justify-center items-center rounded-3xl" data-aos="fade-right">
-          <h3 className="text-[#d7e3ef] md:text-5xl text-3xl font-bold">Applications</h3>
-          <h3 className="text-[#d7e3ef] mt-4 md:text-3xl text-xl text-center">Wires for General Applications:</h3>
-          <p className="text-lg text-[#d7e3ef] w-[60vw] mt-4 md:text-left text-center">Shri Chari Wires has sophisticated manufacturing facilities for producing steel wires which have very diverse applications such as in automobile industry, engineering industry and general house hold applications. We have plans to make more variety of wires in future.</p>
+        <div
+          className="md:w-[95vw] w-[90vw] md:h-[55vh] flex md:flex-col flex-col bg-[#0b131f] justify-center items-center rounded-3xl"
+          data-aos="fade-right"
+        >
+          <h3 className="text-[#d7e3ef] md:text-5xl text-3xl font-bold">
+            Applications
+          </h3>
+          <h3 className="text-[#d7e3ef] mt-4 md:text-3xl text-xl text-center">
+            Wires for General Applications:
+          </h3>
+          <p className="text-lg text-[#d7e3ef] w-[60vw] mt-4 md:text-left text-center">
+            Shri Chari Wires has sophisticated manufacturing facilities for
+            producing steel wires which have very diverse applications such as
+            in automobile industry, engineering industry and general house hold
+            applications. We have plans to make more variety of wires in future.
+          </p>
 
-          <h3 className="text-[#d7e3ef] md:text-3xl text-xl font-bold mt-4 md:text-left text-center">Wires for Cold Heading Applications:</h3>
-          <p className="md:text-left text-center text-lg text-[#d7e3ef] mt-4 w-[60vw]">Shri Chari Wires is one of the leading manufacturer of cold heading quality. Wires for various applications : cold heading quality wires are used for manufacture of high tensile fasteners. Our CHQ wires are well accepted all over the country. Our customers are delighted to make critical fasteners with an ease by using our CHQ wires. We manufacture wires in grades like Low Carbon, Medium Carbon, SAE 1541, Boron grades like 10B21, 15B25 & 15B41 and Alloy Steel Wires like SCM 435 & SCM 440 etc. </p>
+          <h3 className="text-[#d7e3ef] md:text-3xl text-xl mt-4 md:text-left text-center">
+            Wires for Cold Heading Applications:
+          </h3>
+          <p className="md:text-left text-center text-lg text-[#d7e3ef] mt-4 w-[60vw]">
+            Shri Chari Wires is one of the leading manufacturer of cold heading
+            quality. Wires for various applications : cold heading quality wires
+            are used for manufacture of high tensile fasteners. Our CHQ wires
+            are well accepted all over the country. Our customers are delighted
+            to make critical fasteners with an ease by using our CHQ wires. We
+            manufacture wires in grades like Low Carbon, Medium Carbon, SAE
+            1541, Boron grades like 10B21, 15B25 & 15B41 and Alloy Steel Wires
+            like SCM 435 & SCM 440 etc.{" "}
+          </p>
+        </div>
+      </div>
+
+      <div className="w-[95vw] md:h-[40vh] py-5">
+        <div className="flex justify-center items-center md:flex-col flex-col text-[#0b131f]">
+          <h3 className="text-xl md:text-left text-center ">
+            Size Range: 1.80mm to 36.00mm diameter
+          </h3>
+          <h3 className="text-xl md:text-left text-center ">
+            Size Tolerance : We produce wires in very close tolerances.
+          </h3>
+
+          <table
+            className="mt-8 flex flex-col justify-center border-2 border-[#0b131f]"
+            width="250px"
+          >
+            <thead className="text-xl bg-[#0b131f] text-[#d7e3ef]">
+              <tr className="flex flex-row justify-center gap-10">
+                <th>Wire Size</th>
+                <th>Tolerance (mm)</th>
+              </tr>
+            </thead>
+
+            <tbody >
+              <tr className="flex flex-row justify-center gap-10 text-lg">
+                <td>1.80 to 3.00</td>
+                <td>± 0.025</td>
+              </tr>
+              <tr className="flex flex-row justify-center gap-10 text-lg">
+                <td>3.00 to 6.00</td>
+                <td>± 0.030</td>
+              </tr>
+              <tr className="flex flex-row justify-center gap-10 text-lg">
+                <td>6.00 & above</td>
+                <td>± 0.050</td>
+              </tr>
+            </tbody>
+          </table>
         </div>
       </div>
     </>
