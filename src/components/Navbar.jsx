@@ -65,7 +65,7 @@ export const Navbar = () => {
               sticky ? "md:bg-white/0 bg-[#0b131f]" : "bg-[#0b131f]"
             } text-gray-900 md:block hidden px-7 py-2 font-medium `}
           >
-            <ul className="flex items-center justify-center gap-1 py-2 text-[15px]">
+            <ul className="flex items-center justify-center gap-1 py-2 text-[18px]">
               {menuLinks?.map((menu, i) => (
                 <li key={i} className="px-6 text-white hover:text-cyan-600">
                   <Link to={menu?.link}>{menu?.name}</Link>

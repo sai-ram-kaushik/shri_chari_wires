@@ -16,7 +16,7 @@ export const Hero = () => {
     <>
       <div className="flex py-10 justify-center">
         <section
-          className="min-h-screen md:w-[95vw] w-[90vw] flex md:flex-row flex-col bg-[#0b131f] rounded-2xl"
+          className="min-h-screen md:w-[95vw] w-[90vw] flex md:flex-row flex-col bg-[#0b131f] rounded-3xl"
           data-aos="fade-right"
         >
           <div className="flex-1 flex md:text-left text-center md:ml-10 md:mt-20 py-28 flex-col m-5">
@@ -39,12 +39,12 @@ export const Hero = () => {
               needs of engineering, automobile & allied industries.
             </p>
           </div>
-          
+
           <div className="flex-1">
-            <div className="flex h-full">
+            <div className="flex h-full justify-center items-center">
               <img
                 src={banner}
-                className="md:w-[500px] h-[300px] w-[300px] mt-56 md:ml-32 rounded-3xl border-4 border-[#d7e3ef]"
+                className="md:w-[500px] md:h-[300px] w-[300px] rounded-3xl border-4 border-[#d7e3ef]"
                 alt="banner"
               />
             </div>
@@ -88,11 +88,13 @@ export const Hero = () => {
           </div>
         </div>
 
-        <div
-          className="w-[90vw] md:block hidden mt-16 ml-20 rounded-lg border-2 border-[#0b131f]"
-          data-aos="fade-right"
-        >
-          <Responsive />
+        <div className="flex justify-center">
+          <div
+            className="w-[60vw] md:block hidden mt-16 ml-20 rounded-lg border-2 border-[#0b131f]"
+            data-aos="fade-right"
+          >
+            <Responsive />
+          </div>
         </div>
       </div>
     </>
