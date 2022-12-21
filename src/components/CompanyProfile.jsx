@@ -1,5 +1,6 @@
 import React from "react";
 import banner from "../assets/images/banner.jpg";
+import Responsive from "./Responsive";
 export const CompanyProfile = () => {
   return (
     <>
@@ -110,7 +111,7 @@ export const CompanyProfile = () => {
         </div>
       </div>
 
-      <div className="w-[95vw] md:h-[40vh] py-5">
+      <div className="w-[95vw] md:h-[55vh] py-5">
         <div className="flex justify-center items-center md:flex-col flex-col text-[#0b131f]">
           <h3 className="text-xl md:text-left text-center ">
             Size Range: 1.80mm to 36.00mm diameter
@@ -130,7 +131,7 @@ export const CompanyProfile = () => {
               </tr>
             </thead>
 
-            <tbody >
+            <tbody>
               <tr className="flex flex-row justify-center gap-10 text-lg">
                 <td>1.80 to 3.00</td>
                 <td>± 0.025</td>
@@ -145,6 +146,15 @@ export const CompanyProfile = () => {
               </tr>
             </tbody>
           </table>
+
+          <div className="flex justify-center">
+            <div
+              className="w-[60vw] md:block hidden mt-16 ml-20 rounded-lg border-2 border-[#0b131f]"
+              data-aos="fade-right"
+            >
+              <Responsive />
+            </div>
+          </div>
         </div>
       </div>
     </>
