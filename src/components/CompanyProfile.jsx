@@ -111,7 +111,7 @@ export const CompanyProfile = () => {
         </div>
       </div>
 
-      <div className="w-[95vw] md:h-[55vh] py-5">
+      <div className="w-[95vw] md:h-[55vh] py-5" data-aos="fade-right">
         <div className="flex justify-center items-center md:flex-col flex-col text-[#0b131f]">
           <h3 className="text-xl md:text-left text-center ">
             Size Range: 1.80mm to 36.00mm diameter
