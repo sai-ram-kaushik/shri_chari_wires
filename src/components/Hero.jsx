@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import banner from "../assets/images/hero.jpg";
+import banner from "../assets/images/hero_img.png";
 import product1 from "../assets/images/alloySteelWire.webp";
 import product2 from "../assets/images/nonAlloy.jpg";
 import { Link } from "react-router-dom";
@@ -44,7 +44,7 @@ export const Hero = () => {
             <div className="flex h-full justify-center items-center">
               <img
                 src={banner}
-                className="md:w-[500px] md:h-[300px] w-[300px] rounded-3xl border-4 border-[#d7e3ef]"
+                className="md:w-[500px] md:h-[400px] w-[300px]"
                 alt="banner"
               />
             </div>

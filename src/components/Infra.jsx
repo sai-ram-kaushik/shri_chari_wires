@@ -32,7 +32,7 @@ export const Infra = () => {
       </div>
 
       <div className="flex py-10 justify-center flex-col gap-14">
-        <div className="flex justify-center items-center flex-col gap-5">
+        <div className="flex justify-center items-center flex-col gap-5" data-aos="fade-right">
           <h3 className="text-[#0b131f] text-3xl text-center font-bold ">
             4 Acres of land
           </h3>
@@ -42,7 +42,7 @@ export const Infra = () => {
           </p>
         </div>
 
-        <div className="flex justify-center items-center flex-col gap-5">
+        <div className="flex justify-center items-center flex-col gap-5" data-aos="fade-right">
           <h3 className="text-[#0b131f] text-3xl text-center font-bold flex justify-center ">
             Wire drawing machines
           </h3>
@@ -51,7 +51,7 @@ export const Infra = () => {
             which can produce wire sizes right from 1.2 mm to 28 mm adding a
             wide range to their product mix.
           </p>
-          <div className="flex flex-row gap-14 justify-center items-center" data-aos="fade-right">
+          <div className="flex flex-row gap-14 justify-center items-center" >
             <ul className="list-disc flex flex-col" role="list">
               <li>52100/EN31</li>
               <li>1541/EN8D</li>
